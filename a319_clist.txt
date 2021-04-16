@@ -8,13 +8,13 @@ sw_itemvoid_c:\white\                    VERSION 2.0 BY POULSEJ FROM 14TH APRIL 
 sw_itemvoid_c:\white\                            FULL FLIGHT PROCEDURES CHECKLIST
 sw_itemvoid_c:\grey\                  FOR TOLISS AIRBUS A319 V1.5.2 & XCHECKLIST 1.41
 sw_itemvoid:
-sw_itemvoid_c:       BBBBBBBBB         BBBBBBBB       BBBBBBBBB        BBBBBBBBB
-sw_itemvoid_c:     BBBBBBBBBB       BBBBBBBBB      BBBBBBBBB        BBBBBBBBB
-sw_itemvoid_c:    BBB        BBB                 BBBB              BBB            BBB       BBB
-sw_itemvoid_c:   BBB        BBB             BBBBBB              BBB             BBBBBBBBB
-sw_itemvoid_c:  BBBBBBBBBB                 BBBB              BBB                        BBB
-sw_itemvoid_c: BBB        BBB       BBBBBBBBB      BBBBBBBBB         BBBBBBBBB
-sw_itemvoid_c:BBB        BBB         BBBBBBBB      BBBBBBBBB         BBBBBBBBB
+sw_itemvoid_c:       AAAAAAAAA         AAAAAAAA       AAAAAAAAA        AAAAAAAAAA
+sw_itemvoid_c:     AAAAAAAAAA       AAAAAAAAA      AAAAAAAAA        AAAAAAAAA
+sw_itemvoid_c:    AAA        AAA                 AAAA              AAA            AAA       AAA
+sw_itemvoid_c:   AAA        AAA             AAAAAA              AAA             AAAAAAAAA
+sw_itemvoid_c:  AAAAAAAAAA                 AAAA              AAA                        AAA
+sw_itemvoid_c: AAA        AAA       AAAAAAAAA      AAAAAAAAA         AAAAAAAAA
+sw_itemvoid_c:AAA        AAA         AAAAAAAA      AAAAAAAAA         AAAAAAAAA
 sw_itemvoid:
 sw_itemvoid:::::::::::::::::::::::::::::::::::::::: TECHNICAL DATA ::::::::::::::::::::::::::::::::::::::
 sw_itemvoid_c:\white\ENGINES:  \grey\CFM56-5B6 or IAE 2524-A5        \white\AIRCRAFT LENGTH:      \grey\33.8m
