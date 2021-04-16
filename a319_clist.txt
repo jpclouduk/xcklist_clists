@@ -29,11 +29,12 @@ sw_itemvoid_c:\white\MAX FUEL CAPACITY:         \grey\19100 KG    -     44100 LB
 sw_itemvoid_c:\white\FUEL FLOW PER HOUR:        \grey\2370 KG    -       5220 LBS
 sw_itemvoid::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 sw_item_c:CONTINUE TO CHECKLISTS| 
-
-
 ################################################################################################################
 sw_continue:COCKPIT CHECK PROCEDURE (1/2)
 ################################################################################################################
+
+
+
 ################################################################################################################
 sw_checklist:COCKPIT CHECK PROCEDURE (1/2):COCKPIT CHECK PROCEDURE (1/2)
 ################################################################################################################
@@ -63,11 +64,12 @@ sw_item_c:\white\X BLEED SWITCH\grey\, AUTO|CHECKED:AirbusFBW/XBleedSwitch:1
 sw_item_c:\white\PACK FLOW\grey\, (LOW<50PAX>NORM or HOT/HUMID>HIGH|SET:AirbusFBW/PackFlowSel:><0
 sw_item_c:\white\PACK 1\grey\, EXTINGUISHED & FAULT (OFF < 141 PAX)|AS NEEDED:(AirbusFBW/EconFlowSel:0)&&(AirbusFBW/Pack1Switch:1)||(AirbusFBW/EconFlowSel:1)&&(AirbusFBW/Pack1Switch:0)
 sw_item_c:\white\CARGO HEAT SWITCH\grey\, CENTERED POSITION|CHECKED:AirbusFBW/AftCargoTemp:15.5
-
-
 ################################################################################################################
 sw_continue:COCKPIT CHECK PROCEDURE (2/2)
 ################################################################################################################
+
+
+
 ################################################################################################################
 sw_checklist:COCKPIT CHECK PROCEDURE (2/2):COCKPIT CHECK PROCEDURE (2/2)
 ################################################################################################################
@@ -90,11 +92,12 @@ sw_item_c:\white\SPEEDBRAKES\grey\, DISARMED|CHECKED:(sim/cockpit2/controls/spee
 sw_item_c:\white\FLAPS LEVER\grey\, ZERO (COMPARE ECAS)|CHECKED:ckpt/flapMain/anim:0
 sw_item_c:\white\PARKING BRAKE\grey\, ACTIVE|CHECKED:AirbusFBW/ParkBrake:1
 sw_itemvoid_c:\white\WALKAROUND\grey\, NO ISSUES (PILOT MONITORING)|DONE
-
-
 ################################################################################################################
 sw_continue:OVHD WORKFLOW (PILOT FLYING)
 ################################################################################################################
+
+
+
 ################################################################################################################
 sw_checklist:OVHD WORKFLOW (PILOT FLYING):OVHD WORKFLOW (PILOT FLYING)
 ################################################################################################################
@@ -106,7 +109,6 @@ sw_item_c:\white\GPWS BUTTONS\grey\, ALL EXTINGUISHED (FAULT FOR TERR & SYS)|CHE
 sw_item_c:\white\EVAC SWITCH\grey\, CAPT & PURS|CHECKED:ckpt/oh/capt/anim:1
 sw_item_c:\white\ADIRS SWITCHES 1-3\grey\, NAV|SET:(ckpt/oh/irs1/anim:1)&&(ckpt/oh/irs2/anim:1)&&(ckpt/oh/irs3/anim:1)
 sw_item_c:\white\STROBE LIGHT\grey\, AUTO|SET:ckpt/oh/strobeLight/anim:1
-
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: CENTER OVERHEAD ::::::::::::::::::::::::::::::::::::::::::::::::
 sw_item_c:\white\NAV & LOGO LIGHT\grey\, 1 (DAY) OR 2 (NIGHT)|AS NEEDED:ckpt/oh/navLight/anim:!0
@@ -126,16 +128,16 @@ sw_itemvoid_c:\grey\.......... FIRE TESTS ONLY 1ST FLIGHT OF THE DAY, DETECT: BE
 sw_itemvoid_c:\grey\LIGHT, MASTER WARN, FIRE (BELOW ENG MASTERS), ECAM MSG
 sw_item_c:\white\ENG 1 FIRE TEST\grey\, PUSH & HOLD|CHECKED
 sw_item_c:\white\ENG 2 FIRE TEST\grey\, PUSH & HOLD|CHECKED
-
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: RIGHT OVERHEAD ::::::::::::::::::::::::::::::::::::::::::::::::::
-sw_item_c:\white\AUDIO SWITCHING\grey\, CAPT 3 (NOT SIMULATED)|CHECKED
+sw_item_c:\white\RADIO (CAPT 3)\grey\, ACTIVE|ON:AirbusFBW/RMP3Available:1
 sw_item_c:\white\AUDIO MANAGEMENT\grey\, ONLY PA ACTIVE (NOT SIMULATED)|CHECKED
-
-
 ################################################################################################################
 sw_continue:U WORKFLOW AROUND SD PAGES
 ################################################################################################################
+
+
+
 ################################################################################################################
 sw_checklist:U WORKFLOW AROUND SD PAGES:U WORKFLOW AROUND SD PAGES
 ################################################################################################################
@@ -153,11 +155,12 @@ sw_item_c:\white\CHRONOMETER\grey\, TIME & DATE ACTUAL|CHECKED:sim/cockpit2/cloc
 sw_item_c:\white\CHRONOMETER\grey\, GPS (MIDDLE SWITCH)|CHECKED:ckpt/clock/gpsKnob/anim:0
 sw_item_c:\white\LANDING GEAR ANNUNCIATORS\grey\, 3 GREEN (DOWN & LOCKED)|CHECKED
 sw_item_c:\white\BRK FAN\grey\, ON (IF BRAKES HOT E.G. AFTER TURNAROUND)|AS NEEDED:AirbusFBW/BrakeFan:1
-
-
 ################################################################################################################
 sw_continue:PEDESTAL WORKFLOW (1/2)
 ################################################################################################################
+
+
+
 ################################################################################################################
 sw_checklist:PEDESTAL WORKFLOW (1/2):PEDESTAL WORKFLOW (1/2)
 ################################################################################################################
@@ -183,11 +186,12 @@ sw_item_c:\white\FLAPS LEVER\grey\, ZERO (COMPARE ECAS)|CHECKED:sim/cockpit2/con
 sw_itemvoid_c:\grey\OPTIONAL: INSERT FROM/TO (INIT PAGE)
 sw_item_c:\white\LDG ELEV (PRESS PAGE)\grey\, AUTO|CHECKED:AirbusFBW/SDPage:2
 sw_item_c:\white\STATUS (STS PAGE)\grey\, NORMAL (LEFT SIDE)|CHECKED:AirbusFBW/SDPage:12
-
-
 ################################################################################################################
 sw_continue:PEDESTAL WORKFLOW (2/2)
 ################################################################################################################
+
+
+
 ################################################################################################################
 sw_checklist:PEDESTAL WORKFLOW (2/2):PEDESTAL WORKFLOW (2/2)
 ################################################################################################################
@@ -209,11 +213,12 @@ sw_item_c:\white\TRANSPONDER TCAS\grey\, ABV (DURING CLIMB)|SET:AirbusFBW/XPDRTC
 sw_itemvoid_c:\grey\......... ABV RANGE: -2700FT / +9000FT
 sw_item_c:\white\TRANSPONDER STATUS\grey\, STBY|CHECKED:AirbusFBW/XPDRPower:0
 sw_item_c:\white\PAX & CARGO\grey\, FLIGHTPLAN (MATCH ZFW)|LOAD:sim/flightmodel/weight/m_fixed:><0
-
-
 ################################################################################################################
 sw_continue:MCDU (FMS) PROGRAMMING (1/5)
 ################################################################################################################
+
+
+
 ################################################################################################################
 sw_checklist:MCDU (FMS) PROGRAMMING (1/5):MCDU (FMS) PROGRAMMING (1/5)
 ################################################################################################################
@@ -225,7 +230,6 @@ sw_item_c:\white\AIRCRAFT MODEL\grey\, CORRECT|CHECKED
 sw_item_c:\white\ENGINE RATING\grey\, CORRECT|CHECKED
 sw_item_c:\white\NAV DATA BASE\grey\, ACTUAL|CHECKED
 sw_item_c:\white\PERF FACTOR\grey\, < ±6.0%|CHECKED
-
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: INIT > A PAGE ::::::::::::::::::::::::::
 sw_item_c:\white\FROM / TO\grey\, ICAO / ICAO|SET
@@ -235,11 +239,12 @@ sw_item_c:\white\COST INDEX\grey\, FLIGHTPLAN CI|SET:toliss_airbus/init/costinde
 sw_item_c:\white\CRZ FL\grey\, FLIGHTPLAN ALTITUDE|SET:toliss_airbus/init/cruise_alt:><0
 sw_item_c:\white\WIND\grey\, REQUEST (OR MANUAL ACC. FPL)|SET
 sw_item_c:\white\IRS INIT\grey\, ALIGN ON REF (CONFIRM)|SET:AirbusFBW/AlignADIRUPossible:1:0
-
-
 ################################################################################################################
 sw_continue:MCDU (FMS) PROGRAMMING (2/5)
 ################################################################################################################
+
+
+
 ################################################################################################################
 sw_checklist:MCDU (FMS) PROGRAMMING (2/5):MCDU (FMS) PROGRAMMING (2/5)
 ################################################################################################################
@@ -257,18 +262,18 @@ sw_itemvoid_c:\grey\....... SELECT ARR. AIRPORT > ARRIVAL
 sw_item_c:\white\RUNWAY\grey\, ACCORDING FLIGHTPLAN|SELECTED
 sw_item_c:\white\STAR ACCORDING FLIGHTPLAN|SELECTED
 sw_item_c:\white\TMPY INSERT*\grey\, IF FINISHED|SET
-
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: EFIS & F-PLN PAGE ::::::::::::::::::::
 sw_item_c:\white\NAV MODE\grey\, PLAN|SET:AirbusFBW/NDmodeCapt:4
 sw_item_c:\white\CSTR\grey\, ACTIVE|SET:AirbusFBW/NDShowCSTRCapt:1
 sw_item_c:\white\ROUTE\grey\, ACC. CHARTS & NO DISCONTINUTYS|CHECKED
 sw_itemvoid_c:\grey\....... CLEAR F-PLN DISCONTINUTYS IF LISTED
-
-
 ################################################################################################################
 sw_continue:MCDU (FMS) PROGRAMMING (3/5)
 ################################################################################################################
+
+
+
 ################################################################################################################
 sw_checklist:MCDU (FMS) PROGRAMMING (3/5):MCDU (FMS) PROGRAMMING (3/5)
 ################################################################################################################
@@ -279,18 +284,18 @@ sw_itemvoid_c:\grey\....... TYPE "NAME" OR "/FREQUENCY"
 sw_item_c:\white\CRS1 & CRS2\grey\, ACC. CHARTS|AS NEEDED
 sw_item_c:\white\ADF1 & ADF2 FREQ.\grey\, ACC. CHARTS|AS NEEDED
 sw_itemvoid_c:\grey\....... TYPE "NAME" OR "/FREQUENCY"
-
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: INIT > B PAGE :::::::::::::::::::::::::::
 sw_item_c:\white\ZFW/ZFWCG\grey\, ACC. EFB/PERF DATA|SET:(toliss_airbus/init/ZFW:><0)||(toliss_airbus/init/ZFWCG:><0)
 sw_item_c:\white\BLOCK FUEL\grey\, AS LOADED (COMPARE F-PLN)|SET:toliss_airbus/init/BlockFuel:><0
 sw_item_c:\white\RTE RSV FUEL\grey\, ACC. F-PLN (CONT. FUEL)|SET
 sw_item_c:\white\FINAL FUEL\grey\, ACC. F-PLN (FINRES)|SET
-
-
 ################################################################################################################
 sw_continue:MCDU (FMS) PROGRAMMING (4/5)
 ################################################################################################################
+
+
+
 ################################################################################################################
 sw_checklist:MCDU (FMS) PROGRAMMING (4/5):MCDU (FMS) PROGRAMMING (4/5)
 ################################################################################################################
@@ -322,7 +327,6 @@ sw_checklist:MCDU (FMS) PROGRAMMING (5/5):MCDU (FMS) PROGRAMMING (5/5)
 sw_itemvoid:::::::::::::::: SEC F-PLN \ PERF > GO AROUND PAGE ::
 sw_itemvoid_c:\grey\....... PLAN POSSIBLE G/A AT DEPARTING AIRPORT
 sw_item_c:\white\ENG OUT ACC\grey\, MISSED APPROACH ALT. (CHART)|SET
-
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: SEC F-PLN \ PERF < APPR PAGE :::::::::::::
 sw_item_c:\white\QNH\grey\, ACC. METAR (ARRIVAL)
@@ -364,7 +368,6 @@ sw_item_c:\white\COCKPIT DOOR\grey\ CLOSED & LOCKED:ckpt/doorLock:2
 sw_item_c:\white\APU MASTER SW\grey\, ON (PUSH)|SET:AirbusFBW/APUMaster:0:1
 sw_itemvoid_c:\grey\.... WAIT ~15s UNTIL FLAP DOOR IS OPEN
 sw_item_c:\white\APU START\grey\, ON (PUSH)|SET:(AirbusFBW/APUStarter:1)||(AirbusFBW/APUStarter:><0)
-
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: COCKPIT & EFIS (CAPTAIN) ::::::
 sw_item_c:\white\OXYGEN MASK TEST (NOT MODELED)
@@ -383,6 +386,8 @@ sw_item_c:\white\ALTIMETER\grey\, INITIAL CLIMB ALTITUDE|SET:sim/cockpit2/autopi
 sw_continue:COCKPIT PREPARATION PROCEDURE (2/2)
 ################################################################################################################
 
+
+
 ################################################################################################################
 sw_checklist:COCKPIT PREPARATION PROCEDURE (2/2):COCKPIT PREPARATION PROCEDURE (2/2)
 ################################################################################################################
@@ -396,7 +401,6 @@ sw_item_c:\white\LS\grey\, ACTIVE|SET:AirbusFBW/ILSonFO:1
 sw_item_c:\white\FD SWITCH (1ST OFF. SIDE)\grey\, ON|SET:AirbusFBW/FD2Engage:1
 sw_item_c:\white\COCKPIT LIGHTING\grey\, ADJUST|AS NEEDED
 sw_item_c:\white\OXYGEN MASK TEST (NOT MODELED)
-
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: OVERHEAD, EFB ::::::::::::::::::::::
 sw_item_c:\white\RCDR GND CTL\grey\, ON (VOICERECORDER)|SET:AirbusFBW/CvrGndCtrl:1
@@ -404,7 +408,6 @@ sw_item_c:\white\SEATBELTS SIGNS\grey\, ON (IF REFUEL. COMPL.)|SET:(AirbusFBW/OH
 sw_item_c:\white\APU BLEED\grey\, ON (PUSH)|SET:AirbusFBW/APUBleedSwitch:1
 sw_item_c:\white\EXT PWR\grey\, DISCONNECT|SET:AirbusFBW/ExtPowOHPArray[0]:!1
 sw_item_c:\white\CARGO & PAX DOORS\grey\, CLOSED|SET:(AirbusFBW/CargoDoorArray[0]:0)&&(AirbusFBW/CargoDoorArray[1]:0)&&(AirbusFBW/CargoDoorArray[2]:0)&&(AirbusFBW/CargoDoorArray[3]:0)&&(AirbusFBW/PaxDoorArray[0]:0)&&(AirbusFBW/PaxDoorArray[1]:0)&&(AirbusFBW/PaxDoorArray[2]:0)&&(AirbusFBW/PaxDoorArray[3]:0)&&(AirbusFBW/PaxDoorArray[4]:0)&&(AirbusFBW/PaxDoorArray[5]:0)&&(AirbusFBW/PaxDoorArray[6]:0)&&(AirbusFBW/PaxDoorArray[7]:0)&&(AirbusFBW/PaxDoorArray[8]:0)&&(AirbusFBW/PaxDoorArray[9]:0)&&(AirbusFBW/PaxDoorArray[10]:0)&&(AirbusFBW/PaxDoorArray[11]:0)&&(AirbusFBW/PaxDoorArray[12]:0)&&(AirbusFBW/PaxDoorArray[13]:0)&&(AirbusFBW/PaxDoorArray[14]:0)&&(AirbusFBW/PaxDoorArray[15]:0)&&(AirbusFBW/PaxDoorArray[16]:0)&&(AirbusFBW/PaxDoorArray[17]:0)&&(AirbusFBW/PaxDoorArray[18]:0)&&(AirbusFBW/PaxDoorArray[19]:0)
-
 ################################################################################################################
 sw_continue:BEFORE START PROCEDURE
 ################################################################################################################
@@ -419,8 +422,6 @@ sw_item_c:\white\WEATHER, RWY, SID, FUEL, FLAPS, V1, V2, VR|CHECKED
 sw_item_c:\white\V1, V2, VR, ENGINE FAIL PROCEDURE|CHECKED
 sw_itemvoid_c:\grey\....... READ EXTERNAL NORMAL CHECKLIST
 sw_itemvoid_c:BEFORE START CHECKLIST ABOVE THE LINE|COMPL
-
-
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: RADIO, COCKPIT :::::::::::::::::::::::::::::::
 sw_item_c:\white\CONTACT ATC\grey\, IFR / START-UP CLEARANCE|DONE
@@ -464,7 +465,6 @@ sw_itemvoid:::::::::::::::: PEDESTAL, OVERHEAD :::::::::::::::::::::::::::
 sw_item_c:\white\APU BLEED\grey\, OFF|SET:AirbusFBW/APUBleedSwitch:0
 sw_itemvoid_c:\white\ENG & WING ANTI ICE\grey\, TEMP. <10 DEG. & VIS. MOIST|AS NEEDED
 sw_item_c:\white\APU MASTER\grey\, OFF|SET:AirbusFBW/APUMaster:0
-
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: PEDESTAL, GROUND SERVICE :::::::::::::::::
 sw_item_c:\white\TRIM WHEEL POSITION\grey\, ACC. THS|SET:AirbusFBW/PitchTrimPosition:><0
