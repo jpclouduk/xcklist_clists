@@ -143,7 +143,7 @@ sw_checklist:U WORKFLOW AROUND SD PAGES:U WORKFLOW AROUND SD PAGES
 ################################################################################################################
 sw_itemvoid:::::::::::::::: LEFT CONSOLE ::::::::::::::::::::::::::::::::::::::::::::::::::
 sw_item_c:\white\STANDBY HORIZON\grey\, ACTUAL QNH/QFE (CHECK ALTITUDE)|SET:AirbusFBW/ISIBaroSetting:><0
-sw_item_c:\white\STANDBY ADR\grey\, SHOWING 2 RED FLAGS|CHECKED
+#sw_item_c:\white\STANDBY ADR\grey\, SHOWING 2 RED FLAGS|CHECKED
 
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: RIGHT CONSOLE ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -364,7 +364,6 @@ sw_checklist:COCKPIT PREPARATION PROCEDURE (1/2):COCKPIT PREPARATION PROCEDURE (
 sw_itemvoid:::::::::::::::: COCKPIT, OVERHEAD ::::::::::::::
 sw_item_c:\grey\REMINDER, START TRACKING CLIENT|DONE
 sw_item_c:\white\COCKPIT DOOR\grey\ CLOSED & LOCKED:ckpt/doorLock:2
-# NOT MODELED sw_item_c:\white\REFUEL PWR\grey\, OFF (IF COMPLETED)|SET:model/controls/refuel_power:0
 sw_item_c:\white\APU MASTER SW\grey\, ON (PUSH)|SET:AirbusFBW/APUMaster:0:1
 sw_itemvoid_c:\grey\.... WAIT ~15s UNTIL FLAP DOOR IS OPEN
 sw_item_c:\white\APU START\grey\, ON (PUSH)|SET:(AirbusFBW/APUStarter:1)||(AirbusFBW/APUStarter:><0)
@@ -447,11 +446,10 @@ sw_itemvoid:::::::::::::::: PEDESTAL, SD PAGES, MCP :::::::::::::
 sw_item_c:\white\ENGINE MODE SELECTOR\grey\, IGN/START (1ST. OFF)|SET:AirbusFBW/ENGModeSwitch:2
 sw_item_c:\white\MONITOR SD PAGES\grey\, ALL NORMAL|CHECKED
 sw_item_c:\white\ENGINE 2\grey\, MASTER ON (START)|SET:AirbusFBW/ENG2MasterSwitch:1
-sw_item_c:\white\ENGINE 2\grey\, STABLE|CHECKED:sim/flightmodel/engine/ENGN_power[1]:>250000
+sw_item_c:\white\ENGINE 2\grey\, STABLE|CHECKED:sim/flightmodel/engine/ENGN_N1_[1]:>19
 sw_item_c:\white\ENGINE 1\grey\, MASTER ON (START)|SET:AirbusFBW/ENG1MasterSwitch:1
-sw_item_c:\white\ENGINE 1\grey\, STABLE|CHECKED:sim/flightmodel/engine/ENGN_power[0]:>250000
-#sw_item_c:\white\CHRONOMETER (CAPT.)\grey\, START|SET:AirbusFBW/ChronoTimeND1:><0
-sw_item_c:\white\ELAPSED TIME\grey\, Counter|START
+sw_item_c:\white\ENGINE 2\grey\, STABLE|CHECKED:sim/flightmodel/engine/ENGN_N1_[0]:>19
+sw_item_c:\white\ELAPSED TIME\grey\, Counter|START:AirbusFBW/ClockETSwitch:0
 ################################################################################################################
 sw_continue:AFTER START PROCEDURE (1/2)
 ################################################################################################################
