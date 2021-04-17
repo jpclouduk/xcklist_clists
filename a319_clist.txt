@@ -62,7 +62,6 @@ sw_itemvoid_c:\grey\....... WAIT SHORT TILL APU DOOR IS OPEN
 sw_itemvoid_c:\white\APU START\grey\, ON (PUSH)|AS NEEDED
 sw_item_c:\white\X BLEED SWITCH\grey\, AUTO|CHECKED:AirbusFBW/XBleedSwitch:1
 sw_item_c:\white\PACK FLOW\grey\, (LOW<50PAX>NORM or HOT/HUMID>HIGH|SET:AirbusFBW/PackFlowSel:><0
-sw_item_c:\white\PACK 1\grey\, EXTINGUISHED & FAULT (OFF < 141 PAX)|AS NEEDED:(AirbusFBW/EconFlowSel:0)&&(AirbusFBW/Pack1Switch:1)||(AirbusFBW/EconFlowSel:1)&&(AirbusFBW/Pack1Switch:0)
 sw_item_c:\white\CARGO HEAT SWITCH\grey\, CENTERED POSITION|CHECKED:AirbusFBW/AftCargoTemp:15.5
 ################################################################################################################
 sw_continue:COCKPIT CHECK PROCEDURE (2/2)
@@ -143,17 +142,17 @@ sw_checklist:U WORKFLOW AROUND SD PAGES:U WORKFLOW AROUND SD PAGES
 ################################################################################################################
 sw_itemvoid:::::::::::::::: LEFT CONSOLE ::::::::::::::::::::::::::::::::::::::::::::::::::
 sw_item_c:\white\STANDBY HORIZON\grey\, ACTUAL QNH/QFE (CHECK ALTITUDE)|SET:AirbusFBW/ISIBaroSetting:><0
-#sw_item_c:\white\STANDBY ADR\grey\, SHOWING 2 RED FLAGS|CHECKED
+sw_item_c:\white\STANDBY ADR\grey\, SHOWING 2 RED FLAGS|CHECKED
 
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: RIGHT CONSOLE ::::::::::::::::::::::::::::::::::::::::::::::::
-sw_item_c:\white\GEAR LEVER\grey\, DOWN|CHECKED:ckpt/gearHandle:1
+sw_item_c:\white\GEAR LEVER\grey\, DOWN|CHECKED:AirbusFBW/GearLever:1
 sw_item_c:\white\L & R BRAKES PRESSURE\grey\, WORKING|CHECKED:(AirbusFBW/TotLeftBrake:0.3)&&(AirbusFBW/TotLeftBrake:0.3)
 sw_item_c:\white\ACCU PRESS\grey\, IN GREEN RANGE|CHECKED:AirbusFBW/BrakeAccu:0.93:1
 sw_itemvoid_c:\grey\IF NOT: SWITCH ON ELEC PUMP (OVHD) TILL REACHING GREEN
 sw_item_c:\white\CHRONOMETER\grey\, TIME & DATE ACTUAL|CHECKED:sim/cockpit2/clock_timer/date_is_showing:1:0
 sw_item_c:\white\CHRONOMETER\grey\, GPS (MIDDLE SWITCH)|CHECKED:ckpt/clock/gpsKnob/anim:0
-sw_item_c:\white\LANDING GEAR ANNUNCIATORS\grey\, 3 GREEN (DOWN & LOCKED)|CHECKED
+sw_item_c:\white\LANDING GEAR ANNUNCIATORS\grey\, 3 GREEN (DOWN & LOCKED)|CHECKED:AirbusFBW/OHPLightsATA32[1]:<0.1
 sw_item_c:\white\BRK FAN\grey\, ON (IF BRAKES HOT E.G. AFTER TURNAROUND)|AS NEEDED:AirbusFBW/BrakeFan:1
 ################################################################################################################
 sw_continue:PEDESTAL WORKFLOW (1/2)
@@ -364,6 +363,7 @@ sw_checklist:COCKPIT PREPARATION PROCEDURE (1/2):COCKPIT PREPARATION PROCEDURE (
 sw_itemvoid:::::::::::::::: COCKPIT, OVERHEAD ::::::::::::::
 sw_item_c:\grey\REMINDER, START TRACKING CLIENT|DONE
 sw_item_c:\white\COCKPIT DOOR\grey\ CLOSED & LOCKED:ckpt/doorLock:2
+# NOT MODELED sw_item_c:\white\REFUEL PWR\grey\, OFF (IF COMPLETED)|SET:model/controls/refuel_power:0
 sw_item_c:\white\APU MASTER SW\grey\, ON (PUSH)|SET:AirbusFBW/APUMaster:0:1
 sw_itemvoid_c:\grey\.... WAIT ~15s UNTIL FLAP DOOR IS OPEN
 sw_item_c:\white\APU START\grey\, ON (PUSH)|SET:(AirbusFBW/APUStarter:1)||(AirbusFBW/APUStarter:><0)
@@ -392,7 +392,7 @@ sw_checklist:COCKPIT PREPARATION PROCEDURE (2/2):COCKPIT PREPARATION PROCEDURE (
 ################################################################################################################
 sw_itemvoid:::::::::::::::: EFIS & COCKPIT (1ST OFFICER) ::
 sw_item_c:\white\CSTR\grey\, ACTIVE|SET:AirbusFBW/NDShowCSTRFO:1
-sw_item_c:\white\BAROMETER\grey\, SET LOCAL QNH / QFE|SET:sim/cockpit/misc/barometer_setting2:{sim/cockpit/misc/barometer_setting}
+sw_item_c:\white\BAROMETER\grey\, SET LOCAL QNH / QFE|SET:1:closer_than({sim/cockpit/misc/barometer_setting}, {sim/cockpit/misc/barometer_setting2}, 0.005)
 sw_item_c:\white\ND DISPLAX RANGE\grey\, 40 NM|AS NEEDED:AirbusFBW/NDrangeFO:2
 sw_item_c:\white\ND DISPLAY MODE\grey\, ARC|SET:AirbusFBW/NDmodeFO:3
 sw_item_c:\white\ND NAV SWITCHES\grey\, VOR OR ADF|AS NEEDED:(ckpt/fcu/adf1Right/anim:><0)||(ckpt/fcu/adf2Right/anim:><0)
@@ -446,9 +446,9 @@ sw_itemvoid:::::::::::::::: PEDESTAL, SD PAGES, MCP :::::::::::::
 sw_item_c:\white\ENGINE MODE SELECTOR\grey\, IGN/START (1ST. OFF)|SET:AirbusFBW/ENGModeSwitch:2
 sw_item_c:\white\MONITOR SD PAGES\grey\, ALL NORMAL|CHECKED
 sw_item_c:\white\ENGINE 2\grey\, MASTER ON (START)|SET:AirbusFBW/ENG2MasterSwitch:1
-sw_item_c:\white\ENGINE 2\grey\, STABLE|CHECKED:sim/flightmodel/engine/ENGN_N1_[1]:>19
+sw_item_c:\white\ENGINE 2\grey\, STABLE|CHECKED:sim/flightmodel/engine/ENGN_N1_[1]:>19.7
 sw_item_c:\white\ENGINE 1\grey\, MASTER ON (START)|SET:AirbusFBW/ENG1MasterSwitch:1
-sw_item_c:\white\ENGINE 2\grey\, STABLE|CHECKED:sim/flightmodel/engine/ENGN_N1_[0]:>19
+sw_item_c:\white\ENGINE 2\grey\, STABLE|CHECKED:sim/flightmodel/engine/ENGN_N1_[0]:>19.7
 sw_item_c:\white\ELAPSED TIME\grey\, Counter|START:AirbusFBW/ClockETSwitch:0
 ################################################################################################################
 sw_continue:AFTER START PROCEDURE (1/2)
@@ -531,7 +531,7 @@ sw_item_c:\white\LEFT & RIGHT LANDING LIGHTS\grey\, ON|SET:(AirbusFBW/OHPLightSw
 sw_item_c:\white\NOSE LIGHT\grey\, T.O (TAKEOFF)|SET:AirbusFBW/OHPLightSwitches[3]:2
 sw_item_c:\white\TRANSPONDER TCAS\grey\, TA/RA|SET:AirbusFBW/TCASStatus:1
 sw_item_c:\white\SEATBELTS SIGNS\grey\, OFF THEN AUTO (CREWINFO):AirbusFBW/OHPLightSwitches[11]:0:1
-sw_item_c:\white\PACK 1 & 2\grey\, OFF|SET:(AirbusFBW/Pack1Switch:0)&&(AirbusFBW/Pack2Switch:0)
+sw_item_c:\white\PACK 1 & 2\grey\, AS REQUIRED|SET
 sw_itemvoid_c:BEFORE TAKEOFF CHECKLIST ABOVE THE LINE|COMPL
 ################################################################################################################
 sw_continue:TAKEOFF PROCEDURE
@@ -543,7 +543,7 @@ sw_continue:TAKEOFF PROCEDURE
 sw_checklist:TAKEOFF PROCEDURE:TAKEOFF PROCEDURE
 ################################################################################################################
 sw_itemvoid:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-sw_item_c:\white\THRUST\grey\, STABALIZED AT 50% N1|CHECKED:(sim/flightmodel/engine/ENGN_power[0]:>3500000)&&(sim/flightmodel/engine/ENGN_power[1]:>3500000)
+sw_item_c:\white\THRUST\grey\, STABALIZED AT 50% N1|CHECKED:(sim/flightmodel/engine/ENGN_N1_[0]:>51)&&(sim/flightmodel/engine/ENGN_N1_[1]:>51)
 sw_item_c:\white\CHRONOMETER (BUTTON)\grey\, START|SET:AirbusFBW/ChronoTimeND1:><0
 sw_item_c:\white\THRUST\grey\, FLEX THR (2 KLICKS)|SET:(AirbusFBW/throttle_input[4]:0.75:0.8)
 sw_itemvoid_c:\white\PFD\grey\, MONITOR FLX (FMA RIGHT CORNER)|CHECKED
@@ -556,9 +556,7 @@ sw_checklist:CLIMB PROCEDURE:CLIMB PROCEDURE
 ################################################################################################################
 sw_show:(sim/flightmodel/position/y_agl:30:300)&&(AirbusFBW/APPhase:1)&&(sim/time/is_in_replay:0)
 sw_itemvoid:::::::::::::::: CONSOLE, MCP, PEDESTAL ::::::::::::::::::::
-sw_item_c:\white\LANDING GEAR LEVER\grey\, UP|DONE:ckpt/gearHandle:0
-sw_item_c:\white\SPEEDBRAKES\grey\, DISARMED|SET:sim/cockpit2/controls/speedbrake_ratio:-0.3|0
-sw_item_c:\white\RWY TURNOFF & NOSE LIGHT\grey\, OFF|SET:(AirbusFBW/OHPLightSwitches[3]:0)&&(AirbusFBW/OHPLightSwitches[6]:0)
+sw_item_c:\white\LANDING GEAR LEVER\grey\, UP|DONE:AirbusFBW/gearLever:0
 sw_item_c:\white\AUTOPILOT\grey\, ENGANGE (ABOVE 1000FT AGL):(AirbusFBW/AP1Engage:1)||(AirbusFBW/AP2Engage:1)
 sw_itemvoid_c:\grey\......... FOR NOISE ABATEMENT DEPARTURES
 sw_itemvoid_c:\grey\START FLAPS UP SPEED & FLAPS RETRACT ACC.
@@ -566,10 +564,13 @@ sw_itemvoid_c:\grey\NADP1:   >3000 FT AGL      NADP2:    > 800 FT AGL
 sw_itemvoid_c:\grey\PROC A:  >3000 FT AGL      PROC B:  >1000 FT AGL
 sw_itemvoid_c:\grey\ACCELERATE NORMAL CLIMB SPEED  >3000 FT AGL
 sw_item_c:\white\THRUST\grey\, CLB THR|SET:(AirbusFBW/throttle_input[4]:0.8:0.77)
+sw_item_c:\white\FLAPS\grey\, RETRACT (ABOVE ORANGE FLAP BUG)|DONE:sim/cockpit2/controls/flap_ratio:0
+sw_item_c:\white\SPEEDBRAKES\grey\, DISARMED|SET:sim/cockpit2/controls/speedbrake_ratio:-0.3|0
 sw_item_c:\white\PACK 2\grey\, ON|SET:(AirbusFBW/Pack2Switch:1)
 sw_itemvoid_c:\grey\......... WAIT 10 SECONDS (EAR PRESSURE SAFETY)
 sw_item_c:\white\PACK 1\grey\, ON|SET:(AirbusFBW/Pack1Switch:1)
-sw_item_c:\white\FLAPS\grey\, RETRACT (ABOVE ORANGE FLAP BUG)|DONE:sim/cockpit2/controls/flap_ratio:0
+sw_item_c:\white\RWY TURNOFF & NOSE LIGHT\grey\, OFF|SET:(AirbusFBW/OHPLightSwitches[3]:0)&&(AirbusFBW/OHPLightSwitches[6]:0)
+
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: RADIO, MCP :::::::::::::::::::::::::::::::::::::::::
 sw_item_c:\white\CONTACT ATC\grey\, REPORT HEIGHT & POSITION|DONE
