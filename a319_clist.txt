@@ -449,7 +449,7 @@ sw_item_c:\white\ENGINE 2\grey\, MASTER ON (START)|SET:AirbusFBW/ENG2MasterSwitc
 sw_item_c:\white\ENGINE 2\grey\, STABLE|CHECKED:sim/flightmodel/engine/ENGN_N1_[1]:>19.7
 sw_item_c:\white\ENGINE 1\grey\, MASTER ON (START)|SET:AirbusFBW/ENG1MasterSwitch:1
 sw_item_c:\white\ENGINE 2\grey\, STABLE|CHECKED:sim/flightmodel/engine/ENGN_N1_[0]:>19.7
-sw_item_c:\white\ELAPSED TIME\grey\, Counter|START:AirbusFBW/ClockETSwitch:0
+sw_item_c:\white\ELAPSED TIME\grey\, COUNTER|RUN:AirbusFBW/ClockETSwitch:0
 ################################################################################################################
 sw_continue:AFTER START PROCEDURE (1/2)
 ################################################################################################################
@@ -569,7 +569,7 @@ sw_item_c:\white\THRUST\grey\, CLB THR|SET:(AirbusFBW/throttle_input[4]:0.8:0.77
 sw_item_c:\white\PACK 2\grey\, ON|SET:(AirbusFBW/Pack2Switch:1)
 sw_itemvoid_c:\grey\......... WAIT 10 SECONDS (EAR PRESSURE SAFETY)
 sw_item_c:\white\PACK 1\grey\, ON|SET:(AirbusFBW/Pack1Switch:1)
-sw_item_c:\white\FLAPS\grey\, RETRACT (ABOVE ORANGE FLAP BUG)|DONE:sim/cockpit2/controls/flap_ratio:0
+sw_item_c:\white\FLAPS\grey\, RETRACT (AT OR ABOVE S SPEED)|DONE:sim/cockpit2/controls/flap_ratio:0
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: RADIO, MCP :::::::::::::::::::::::::::::::::::::::::
 sw_item_c:\white\CONTACT ATC\grey\, REPORT HEIGHT & POSITION|DONE
@@ -856,7 +856,7 @@ sw_checklist:TRANSIT SHUTDOWN PROCEDURE:TRANSIT SHUTDOWN PROCEDURE
 ################################################################################################################
 sw_itemvoid:::::::::::::::: PEDESTAL, OVHD ::::::::::::::::::::
 sw_item_c:\white\PARKING BRAKE\grey\, ACTIVE|SET:AirbusFBW/ParkBrake:1
-sw_item_c:\white\ELAPSED TIME\grey\, Counter|START:AirbusFBW/ClockETSwitch:1
+sw_item_c:\white\ELAPSED TIME\grey\, COUNTER|STP:AirbusFBW/ClockETSwitch:1
 sw_item_c:\white\TRANSPONDER\grey\, OFF|SET:AirbusFBW/XPDRTCASMode:0
 sw_item_c:\white\APU BLEED\grey\, ON (PUSH)|SET:AirbusFBW/APUBleedSwitch:1
 sw_item_c:\white\ENGINE MASTERS 1\grey\, OFF|SET:AirbusFBW/ENG1MasterSwitch:0
