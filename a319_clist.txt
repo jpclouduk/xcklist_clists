@@ -557,6 +557,8 @@ sw_checklist:CLIMB PROCEDURE:CLIMB PROCEDURE
 sw_show:(sim/flightmodel/position/y_agl:30:300)&&(AirbusFBW/APPhase:1)&&(sim/time/is_in_replay:0)
 sw_itemvoid:::::::::::::::: CONSOLE, MCP, PEDESTAL ::::::::::::::::::::
 sw_item_c:\white\LANDING GEAR LEVER\grey\, UP|DONE:AirbusFBW/gearLever:0
+sw_item_c:\white\SPEEDBRAKES\grey\, DISARMED|SET:sim/cockpit2/controls/speedbrake_ratio:-0.3|0
+sw_item_c:\white\RWY TURNOFF & NOSE LIGHT\grey\, OFF|SET:(AirbusFBW/OHPLightSwitches[3]:0)&&(AirbusFBW/OHPLightSwitches[6]:0)
 sw_item_c:\white\AUTOPILOT\grey\, ENGANGE (ABOVE 1000FT AGL):(AirbusFBW/AP1Engage:1)||(AirbusFBW/AP2Engage:1)
 sw_itemvoid_c:\grey\......... FOR NOISE ABATEMENT DEPARTURES
 sw_itemvoid_c:\grey\START FLAPS UP SPEED & FLAPS RETRACT ACC.
@@ -564,13 +566,10 @@ sw_itemvoid_c:\grey\NADP1:   >3000 FT AGL      NADP2:    > 800 FT AGL
 sw_itemvoid_c:\grey\PROC A:  >3000 FT AGL      PROC B:  >1000 FT AGL
 sw_itemvoid_c:\grey\ACCELERATE NORMAL CLIMB SPEED  >3000 FT AGL
 sw_item_c:\white\THRUST\grey\, CLB THR|SET:(AirbusFBW/throttle_input[4]:0.8:0.77)
-sw_item_c:\white\FLAPS\grey\, RETRACT (ABOVE ORANGE FLAP BUG)|DONE:sim/cockpit2/controls/flap_ratio:0
-sw_item_c:\white\SPEEDBRAKES\grey\, DISARMED|SET:sim/cockpit2/controls/speedbrake_ratio:-0.3|0
 sw_item_c:\white\PACK 2\grey\, ON|SET:(AirbusFBW/Pack2Switch:1)
 sw_itemvoid_c:\grey\......... WAIT 10 SECONDS (EAR PRESSURE SAFETY)
 sw_item_c:\white\PACK 1\grey\, ON|SET:(AirbusFBW/Pack1Switch:1)
-sw_item_c:\white\RWY TURNOFF & NOSE LIGHT\grey\, OFF|SET:(AirbusFBW/OHPLightSwitches[3]:0)&&(AirbusFBW/OHPLightSwitches[6]:0)
-
+sw_item_c:\white\FLAPS\grey\, RETRACT (ABOVE ORANGE FLAP BUG)|DONE:sim/cockpit2/controls/flap_ratio:0
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: RADIO, MCP :::::::::::::::::::::::::::::::::::::::::
 sw_item_c:\white\CONTACT ATC\grey\, REPORT HEIGHT & POSITION|DONE
@@ -857,6 +856,7 @@ sw_checklist:TRANSIT SHUTDOWN PROCEDURE:TRANSIT SHUTDOWN PROCEDURE
 ################################################################################################################
 sw_itemvoid:::::::::::::::: PEDESTAL, OVHD ::::::::::::::::::::
 sw_item_c:\white\PARKING BRAKE\grey\, ACTIVE|SET:AirbusFBW/ParkBrake:1
+sw_item_c:\white\ELAPSED TIME\grey\, Counter|START:AirbusFBW/ClockETSwitch:1
 sw_item_c:\white\TRANSPONDER\grey\, OFF|SET:AirbusFBW/XPDRTCASMode:0
 sw_item_c:\white\APU BLEED\grey\, ON (PUSH)|SET:AirbusFBW/APUBleedSwitch:1
 sw_item_c:\white\ENGINE MASTERS 1\grey\, OFF|SET:AirbusFBW/ENG1MasterSwitch:0
