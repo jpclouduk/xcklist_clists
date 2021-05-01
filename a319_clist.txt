@@ -618,7 +618,7 @@ sw_checklist:CRUISE PROCEDURE:CRUISE PROCEDURE
 ################################################################################################################
 sw_show:(AirbusFBW/APPhase:3)&&(sim/time/is_in_replay:0)
 sw_itemvoid:::::::::::::::: TRANSPONDER :::::::::::::::::::
-sw_item_c:\white\TRANSPONDER TCAS\grey\, BLW|SET:AirbusFBW/XPDRTCASAltSelect:2
+sw_item_c:\white\TRANSPONDER TCAS\grey\, N|SET:AirbusFBW/XPDRTCASAltSelect:1
 sw_itemvoid_c:\grey\......... ALL RANGE: -2700FT / +2700FT
 sw_itemvoid_c:\grey\......... BLW RANGE: -9000FT / +2700FT
 ################################################################################################################
@@ -690,6 +690,8 @@ sw_itemvoid:
 sw_itemvoid:::::::::::::::: MCP :::::::::::::::::::::::::::::::::::::::::::::
 sw_item_c:\white\ALTITUDE BUG\grey\, ADJUST TILL IAF CLEARANCE|SET:sim/cockpit2/autopilot/altitude_dial_ft:><0
 sw_item_c:\white\ALTITUDE BUTTON\grey\, PUSH (2.5NM BEFORE T/D)|SET:AirbusFBW/ALTmanaged:1
+sw_item_c:\white\TRANSPONDER TCAS\grey\, BLW|SET:AirbusFBW/XPDRTCASAltSelect:2
+sw_itemvoid_c:\grey\......... BLW RANGE: -9000FT / +2700FT
 ################################################################################################################
 sw_continue:DESCENT PROCEDURE
 ################################################################################################################
@@ -857,7 +859,7 @@ sw_checklist:TRANSIT SHUTDOWN PROCEDURE:TRANSIT SHUTDOWN PROCEDURE
 sw_itemvoid:::::::::::::::: PEDESTAL, OVHD ::::::::::::::::::::
 sw_item_c:\white\PARKING BRAKE\grey\, ACTIVE|SET:AirbusFBW/ParkBrake:1
 sw_item_c:\white\ELAPSED TIME\grey\, COUNTER|STP:AirbusFBW/ClockETSwitch:1
-sw_item_c:\white\TRANSPONDER\grey\, OFF|SET:AirbusFBW/XPDRTCASMode:0
+sw_item_c:\white\TRANSPONDER\grey\, AUTO|SET:AirbusFBW/XPDRTCASMode:0
 sw_item_c:\white\APU BLEED\grey\, ON (PUSH)|SET:AirbusFBW/APUBleedSwitch:1
 sw_item_c:\white\ENGINE MASTERS 1\grey\, OFF|SET:AirbusFBW/ENG1MasterSwitch:0
 sw_item_c:\white\COCKPIT DOOR\grey\, OPEN|SET:ckpt/doorLock:0
