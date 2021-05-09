@@ -6,7 +6,7 @@ sw_checklist: BASED ON VERSION 1.0 BY VIN_KAIZEN AND BERZERKER FROM 17TH MARCH 2
 sw_itemvoid_c:\white\                    VERSION 2.0 BY POULSEJ FROM 14TH APRIL 2021
 ################################################################################################################
 sw_itemvoid_c:\white\                            FULL FLIGHT PROCEDURES CHECKLIST
-sw_itemvoid_c:\grey\                  FOR TOLISS AIRBUS A319 V1.5.2 & XCHECKLIST 1.41
+sw_itemvoid_c:\grey\                  FOR TOLISS AIRBUS A319 V1.6.1 & XCHECKLIST 1.41
 sw_itemvoid:
 sw_itemvoid_c:       AAAAAAAAA         AAAAAAAA       AAAAAAAAA        AAAAAAAAAA
 sw_itemvoid_c:     AAAAAAAAAA       AAAAAAAAA      AAAAAAAAA        AAAAAAAAA
