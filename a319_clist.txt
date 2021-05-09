@@ -150,7 +150,7 @@ sw_item_c:\white\GEAR LEVER\grey\, DOWN|CHECKED:AirbusFBW/GearLever:1
 sw_item_c:\white\L & R BRAKES PRESSURE\grey\, WORKING|CHECKED:(AirbusFBW/TotLeftBrake:0.3)&&(AirbusFBW/TotLeftBrake:0.3)
 sw_item_c:\white\ACCU PRESS\grey\, IN GREEN RANGE|CHECKED:AirbusFBW/BrakeAccu:0.93:1
 sw_itemvoid_c:\grey\IF NOT: SWITCH ON ELEC PUMP (OVHD) TILL REACHING GREEN
-sw_item_c:\white\CHRONOMETER\grey\, TIME & DATE ACTUAL|CHECKED:sim/cockpit2/clock_timer/date_is_showing:1:0
+sw_item_c:\white\CHRONOMETER\grey\, TIME & DATE ACTUAL|CHECKED:AirbusFBW/ChronoButtonAnimations[2]:>0
 sw_item_c:\white\CHRONOMETER\grey\, GPS (MIDDLE SWITCH)|CHECKED:ckpt/clock/gpsKnob/anim:0
 sw_item_c:\white\LANDING GEAR ANNUNCIATORS\grey\, 3 GREEN (DOWN & LOCKED)|CHECKED:AirbusFBW/OHPLightsATA32[1]:<0.1
 sw_item_c:\white\BRK FAN\grey\, ON (IF BRAKES HOT E.G. AFTER TURNAROUND)|AS NEEDED:AirbusFBW/BrakeFan:1
