@@ -775,7 +775,7 @@ sw_itemvoid::::::::::::::::  PEDESTAL, MCP, OVERHEAD ::::
 sw_itemvoid_c:\grey\...... ON FINAL, AFTER G/S INCEPT
 sw_item_c:\white\ALTIMETER\grey\, MISSED APPROACH ALT.|SET:sim/cockpit2/autopilot/altitude_dial_ft:><0
 sw_itemvoid_c:\white\CONTACT ATC\grey\, REPORT ESTABLISHED
-sw_item_c:\white\FLAPS\grey\, FULL (LANDING CONFIG)|SET:sim/cockpit2/controls/flap_ratio:1
+sw_item_c:\white\FLAPS\grey\, 2 (LANDING CONFIG)|SET:sim/cockpit2/controls/flap_ratio:0.5
 sw_item_c:\white\GEAR LEVER\grey\, DOWN|SET:ckpt/gearHandle:1
 sw_item_c:\white\SPEEDBRAKES\grey\, ARMED|SET:sim/cockpit2/controls/speedbrake_ratio:-0.5
 sw_itemvoid_c:\white\GEAR STATUS\grey\, DOWN & LOCKED (3 GREEN)|CHECKED
@@ -783,6 +783,7 @@ sw_itemvoid_c:\white\ECAM STATUS\grey\, NO BLUE|CHECKED
 sw_item_c:\white\RWY TURNOFF LIGHT\grey\, ON|SET:AirbusFBW/OHPLightSwitches[6]:1
 sw_item_c:\white\NOSE LIGHT\grey\, T.O (TAKEOFF)|SET:AirbusFBW/OHPLightSwitches[3]:2
 sw_itemvoid_c:\white\LEFT & RIGHT WIPERS|AS NEEDED
+sw_item_c:\white\FLAPS\grey\, FULL (LANDING CONFIG)|SET:sim/cockpit2/controls/flap_ratio:1
 sw_item_c:LANDING CHECKLIST|COMPL
 ################################################################################################################
 #sw_continue:LANDING PROCEDURE (3/3)
