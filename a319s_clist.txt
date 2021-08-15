@@ -213,154 +213,15 @@ sw_itemvoid_c:\grey\......... ABV RANGE: -2700FT / +9000FT
 sw_item_c:\white\TRANSPONDER STATUS\grey\, STBY|CHECKED:AirbusFBW/XPDRPower:0
 sw_item_c:\white\PAX & CARGO\grey\, FLIGHTPLAN (MATCH ZFW)|LOAD:sim/flightmodel/weight/m_fixed:><0
 ################################################################################################################
-sw_continue:MCDU (FMS) PROGRAMMING (1/5)
-################################################################################################################
-
-
-
-################################################################################################################
-sw_checklist:MCDU (FMS) PROGRAMMING (1/5):MCDU (FMS) PROGRAMMING (1/5)
-################################################################################################################
-sw_item_c:\white\MCDU BRIGHTNESS\grey\, ADJUST BRIGHTNESS|AS NEEDED:(AirbusFBW/DUBrightness[6]:><0)||(AirbusFBW/DUBrightness[7]:><0)
-sw_itemvoid_c:\grey\FOLLOW S.I.F.E.R.I.C. WORKFLOW:
-sw_itemvoid_c:\grey\STATUS, INIT, FPL, EFIS, RADNAV, INIT, COPY
-sw_itemvoid:::::::::::::::: DATA > A/C STATUS PAGE :::::::::
-sw_item_c:\white\AIRCRAFT MODEL\grey\, CORRECT|CHECKED
-sw_item_c:\white\ENGINE RATING\grey\, CORRECT|CHECKED
-sw_item_c:\white\NAV DATA BASE\grey\, ACTUAL|CHECKED
-sw_item_c:\white\PERF FACTOR\grey\, < ±6.0%|CHECKED
-sw_itemvoid:
-sw_itemvoid:::::::::::::::: INIT > A PAGE ::::::::::::::::::::::::::
-sw_item_c:\white\FROM / TO\grey\, ICAO / ICAO|SET
-sw_item_c:\white\ALTN\grey\, ICAO|SET
-sw_item_c:\white\FLT NBR\grey\, CALLSIGN|SET
-sw_item_c:\white\COST INDEX\grey\, FLIGHTPLAN CI|SET:toliss_airbus/init/costindex:><0
-sw_item_c:\white\CRZ FL\grey\, FLIGHTPLAN ALTITUDE|SET:toliss_airbus/init/cruise_alt:><0
-sw_item_c:\white\WIND\grey\, REQUEST (OR MANUAL ACC. FPL)|SET
-sw_item_c:\white\IRS INIT\grey\, ALIGN ON REF (CONFIRM)|SET:AirbusFBW/AlignADIRUPossible:1:0
-################################################################################################################
-sw_continue:MCDU (FMS) PROGRAMMING (2/5)
-################################################################################################################
-
-
-
-################################################################################################################
-sw_checklist:MCDU (FMS) PROGRAMMING (2/5):MCDU (FMS) PROGRAMMING (2/5)
-################################################################################################################
-sw_itemvoid:::::::::::::::: F-PLN PAGE ::::::::::::::::::::::::::::::
-sw_itemvoid_c:\grey\....... IF NO COMP. RTE SET, INSERT MANUAL
-sw_item_c:\white\F-PLN DISCONT.\grey\, INSERT 1ST WAYPOINT|SET
-sw_itemvoid_c:\grey\....... SELECT WAPOINT > AIRWAYS
-sw_item_c:\white\ROUTE\grey\, ACC. F-PLN (TYPE WP OR AIRWAYS)|SET
-sw_item_c:\white\TMPY INSERT*\grey\, IF FINISHED|SET
-sw_itemvoid_c:\grey\....... SELECT DEP. AIRPORT > DEPARTURE
-sw_item_c:\white\RUNWAY\grey\, ACCORDING FLIGHTPLAN|SELECTED
-sw_item_c:\white\SID\grey\, ACCORDING FLIGHTPLAN|SELECTED
-sw_item_c:\white\TMPY INSERT*\grey\, IF FINISHED|SET
-sw_itemvoid_c:\grey\....... SELECT ARR. AIRPORT > ARRIVAL
-sw_item_c:\white\RUNWAY\grey\, ACCORDING FLIGHTPLAN|SELECTED
-sw_item_c:\white\STAR ACCORDING FLIGHTPLAN|SELECTED
-sw_item_c:\white\TMPY INSERT*\grey\, IF FINISHED|SET
-sw_itemvoid:
-sw_itemvoid:::::::::::::::: EFIS & F-PLN PAGE ::::::::::::::::::::
-sw_item_c:\white\NAV MODE\grey\, PLAN|SET:AirbusFBW/NDmodeCapt:4
-sw_item_c:\white\CSTR\grey\, ACTIVE|SET:AirbusFBW/NDShowCSTRCapt:1
-sw_item_c:\white\ROUTE\grey\, ACC. CHARTS & NO DISCONTINUTYS|CHECKED
-sw_itemvoid_c:\grey\....... CLEAR F-PLN DISCONTINUTYS IF LISTED
-################################################################################################################
-sw_continue:MCDU (FMS) PROGRAMMING (3/5)
-################################################################################################################
-
-
-
-################################################################################################################
-sw_checklist:MCDU (FMS) PROGRAMMING (3/5):MCDU (FMS) PROGRAMMING (3/5)
-################################################################################################################
-sw_itemvoid:::::::::::::::: RAD / NAV PAGE ::::::::::::::::::::::::
-sw_itemvoid_c:\grey\....... SET DEP. NAVAIDS (RAWDATA BACKUP)
-sw_item_c:\white\VOR1 & VOR2 FREQ.\grey\, ACC. CHARTS|AS NEEDED
-sw_itemvoid_c:\grey\....... TYPE "NAME" OR "/FREQUENCY"
-sw_item_c:\white\CRS1 & CRS2\grey\, ACC. CHARTS|AS NEEDED
-sw_item_c:\white\ADF1 & ADF2 FREQ.\grey\, ACC. CHARTS|AS NEEDED
-sw_itemvoid_c:\grey\....... TYPE "NAME" OR "/FREQUENCY"
-sw_itemvoid:
-sw_itemvoid:::::::::::::::: INIT > B PAGE :::::::::::::::::::::::::::
-sw_item_c:\white\ZFW/ZFWCG\grey\, ACC. EFB/PERF DATA|SET:(toliss_airbus/init/ZFW:><0)||(toliss_airbus/init/ZFWCG:><0)
-sw_item_c:\white\BLOCK FUEL\grey\, AS LOADED (COMPARE F-PLN)|SET:toliss_airbus/init/BlockFuel:><0
-sw_item_c:\white\RTE RSV FUEL\grey\, ACC. F-PLN (CONT. FUEL)|SET
-sw_item_c:\white\FINAL FUEL\grey\, ACC. F-PLN (FINRES)|SET
-################################################################################################################
-sw_continue:MCDU (FMS) PROGRAMMING (4/5)
-################################################################################################################
-
-
-
-################################################################################################################
-sw_checklist:MCDU (FMS) PROGRAMMING (4/5):MCDU (FMS) PROGRAMMING (4/5)
-################################################################################################################
-sw_itemvoid:::::::::::::::: SEC F-PLN \ SEC INDEX PAGE ::::::::::
-sw_itemvoid_c:\grey\....... FOR A TAKEOFF ENGINE FAIL PROCEDURE
-sw_item_c:\white\COPY ACTIVE\grey\, F-PLN|SET
-sw_itemvoid_c:\grey\....... MODIFY ROUTE TO IAF-HOLDING
-sw_itemvoid_c:\grey\....... INSERT NEW WAYPOINTS AFTER DEP. RWY
-sw_itemvoid_c:\grey\....... EXA.: "FFM/068/9" (VOR/RAD/DIST)
-sw_itemvoid_c:\grey\....... OR "TEST" (SHOWS ALL 3 WP-METHODES)
-sw_item_c:\white\WAYPOINTS\grey\, INSERTED|SET
-sw_itemvoid_c:\grey\....... OVFY / TRIANGLE (LEFT TO CLR)
-sw_item_c:\white\OVERFLY FEATURE\grey\, ADDED (AT FIRST WP)|SET
-sw_item_c:\white\HOLDING\grey\, ADDED (AT IAF-WAYPOINT)|SET
-sw_itemvoid_c:\grey\....... PLAN LANDING AT DEPARTING AIRPORT
-sw_itemvoid_c:\grey\....... SELECT LAST WAYPOINT AFTER HOLDING
-sw_item_c:\white\NEW DEST\grey\, INSERT DEP. AIRPORT (ICAO)|SET
-sw_itemvoid_c:\grey\....... SELECT DEST AIRPORT > ARRIVAL
-sw_item_c:\white\RUNWAY\grey\, SELECT > NO STAR|SET
-################################################################################################################
-sw_continue:MCDU (FMS) PROGRAMMING (5/5)
-################################################################################################################
-
-
-
-################################################################################################################
-sw_checklist:MCDU (FMS) PROGRAMMING (5/5):MCDU (FMS) PROGRAMMING (5/5)
-################################################################################################################
-sw_itemvoid:::::::::::::::: SEC F-PLN \ PERF > GO AROUND PAGE ::
-sw_itemvoid_c:\grey\....... PLAN POSSIBLE G/A AT DEPARTING AIRPORT
-sw_item_c:\white\ENG OUT ACC\grey\, MISSED APPROACH ALT. (CHART)|SET
-sw_itemvoid:
-sw_itemvoid:::::::::::::::: SEC F-PLN \ PERF < APPR PAGE :::::::::::::
-sw_item_c:\white\QNH\grey\, ACC. METAR (ARRIVAL)
-sw_item_c:\white\TEMP\grey\, ACC. METAR (ARRIVAL)
-sw_item_c:\white\MAG / WIND\grey\, ACC. METAR (ARRIVAL)
-sw_item_c:\white\MDA / DH\grey\, ACC. CHART (ARRIVAL)
-################################################################################################################
-sw_continue:PERFORMANCE PROCEDURE
-################################################################################################################
-
-
-
-################################################################################################################
-sw_checklist:PERFORMANCE PROCEDURE:PERFORMANCE PROCEDURE
-################################################################################################################
-sw_itemvoid:::::::::::::::: MCDU PERF > TAKEOFF PAGE ::::::::::
-sw_itemvoid_c:\grey\....... CALCULATE TAKEOFF PERFORMANCE
-sw_item_c:\white\FLAPS/THS\grey\, AS CALCULATED / EFB (TRIM POS)|SET
-sw_item_c:\white\FLEX TEMP.\grey\, AS CALCULATED|SET:AirbusFBW/FlexTemp:><0
-sw_item_c:\white\V1, VR, V2\grey\, AS CALCULATED (WITHIN 1 KTS)|SET:(toliss_airbus/performance/V1:><0)||(toliss_airbus/performance/VR:><0)||(toliss_airbus/performance/V2:><0)
-sw_itemvoid_c:\grey\....... FOR A NOISE ABATEMENT DEPARTURE
-sw_item_c:\white\THR RED HEIGHT (MSL)\grey\, ACC. PROCEDURE|AS NEEDED
-sw_itemvoid_c:\white\NADP1:\grey\     800 FT AGL     \white\NADP2:\grey\     800 FT AGL
-sw_itemvoid_c:\white\PROC A:\grey\  1500 FT AGL     \white\PROC B:\grey\  1000 FT AGL
-sw_item_c:\white\ACC HEIGHT (MSL)\grey\, 3000 FT AGL|AS NEEDED
-################################################################################################################
 sw_continue:COCKPIT PREPARATION PROCEDURE (1/2)
 ################################################################################################################
-
 
 
 ################################################################################################################
 sw_checklist:COCKPIT PREPARATION PROCEDURE (1/2):COCKPIT PREPARATION PROCEDURE (1/2)
 ################################################################################################################
 sw_itemvoid:::::::::::::::: COCKPIT, OVERHEAD ::::::::::::::
+sw_item_c:\grey\MCDU/FLIGHT PLAN COMPLETE|DONE
 sw_item_c:\grey\REMINDER, START TRACKING CLIENT|DONE
 sw_item_c:\white\COCKPIT DOOR\grey\ CLOSED & LOCKED:ckpt/doorLock:2
 # NOT MODELED sw_item_c:\white\REFUEL PWR\grey\, OFF (IF COMPLETED)|SET:model/controls/refuel_power:0
