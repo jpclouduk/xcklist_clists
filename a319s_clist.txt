@@ -212,6 +212,7 @@ sw_item_c:\white\TRANSPONDER TCAS\grey\, ABV (DURING CLIMB)|SET:AirbusFBW/XPDRTC
 sw_itemvoid_c:\grey\......... ABV RANGE: -2700FT / +9000FT
 sw_item_c:\white\TRANSPONDER STATUS\grey\, STBY|CHECKED:AirbusFBW/XPDRPower:0
 sw_item_c:\white\PAX & CARGO\grey\, FLIGHTPLAN (MATCH ZFW)|LOAD:sim/flightmodel/weight/m_fixed:><0
+sw_item_c:\grey\PROGRAM MCDU/FLIGHT PLN|DONE
 ################################################################################################################
 sw_continue:COCKPIT PREPARATION PROCEDURE (1/2)
 ################################################################################################################
@@ -221,7 +222,7 @@ sw_continue:COCKPIT PREPARATION PROCEDURE (1/2)
 sw_checklist:COCKPIT PREPARATION PROCEDURE (1/2):COCKPIT PREPARATION PROCEDURE (1/2)
 ################################################################################################################
 sw_itemvoid:::::::::::::::: COCKPIT, OVERHEAD ::::::::::::::
-sw_item_c:\grey\MCDU/FLIGHT PLAN COMPLETE|DONE
+sw_item_c:\grey\MCDU/FLIGHT PLN COMPLETE|DONE
 sw_item_c:\grey\REMINDER, START TRACKING CLIENT|DONE
 sw_item_c:\white\COCKPIT DOOR\grey\ CLOSED & LOCKED:ckpt/doorLock:2
 # NOT MODELED sw_item_c:\white\REFUEL PWR\grey\, OFF (IF COMPLETED)|SET:model/controls/refuel_power:0
