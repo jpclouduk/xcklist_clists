@@ -467,7 +467,7 @@ sw_itemvoid:::::::::::::::: PEDESTAL, GROUND SERVICE :::::::::::::::::
 sw_item_c:\white\TRIM WHEEL POSITION\grey\, ACC. THS|SET:AirbusFBW/PitchTrimPosition:><0
 sw_itemvoid_c:\grey\....... COMP. FLAPS & THS WITH FMS/PERF > TO PAGE
 sw_item_c:\white\ENGINE MODE SELECTOR\grey\, NORM|SET:AirbusFBW/ENGModeSwitch:1
-sw_item_c:\white\SPEEDBRAKES\grey\, ARMED|SET:sim/cockpit2/controls/speedbrake_ratio:-0.5
+sw_item_c:\white\GND SPLR ON\grey\, ARMED|SET:sim/cockpit2/controls/speedbrake_ratio:-0.5
 sw_item_c:\white\RUDDER TRIM RESET\grey\, ZERO (PUSH)|SET:AirbusFBW/YawTrimPosition:0
 sw_itemvoid_c:AFTER START CHECKLIST|COMPL
 sw_item_c:\white\PUSHBACK CREW\grey\, DISC. & SHOWING BYPASS PIN|CHECKED:bp/anim/clear_signal:!0
@@ -510,9 +510,9 @@ sw_itemvoid_c:BEFORE TAKEOFF CHECKLIST ABOVE THE LINE|COMPL
 sw_itemvoid:
 sw_itemvoid:::::::::::::::: RADIO, OVHD, PEDESTAL :::::::::::::::::::::::
 sw_item_c:\white\CONTACT ATC\grey\, REQUEST TAXI CLEARANCE|DONE
-sw_item_c:\white\ELAPSED TIME\grey\, COUNTER|RUN:AirbusFBW/ClockETSwitch:0
 sw_item_c:\white\NOSE LIGHT\grey\, TAXI|SET:AirbusFBW/OHPLightSwitches[3]:1
 sw_item_c:\white\RWY TURNOFF LIGHT\grey\, ON|SET:AirbusFBW/OHPLightSwitches[6]:1
+sw_item_c:\white\ELAPSED TIME\grey\, COUNTER|RUN:AirbusFBW/ClockETSwitch:0
 sw_item_c:\white\PARKING BRAKE\grey\, RELEASED|SET:AirbusFBW/ParkBrake:0
 sw_itemvoid_c:\grey\MAX. 10 KTS (TURNS) / 25 KTS (STRAIGHTS)
 ################################################################################################################
@@ -557,7 +557,7 @@ sw_checklist:CLIMB PROCEDURE:CLIMB PROCEDURE
 sw_show:(sim/flightmodel/position/y_agl:30:300)&&(AirbusFBW/APPhase:1)&&(sim/time/is_in_replay:0)
 sw_itemvoid:::::::::::::::: CONSOLE, MCP, PEDESTAL ::::::::::::::::::::
 sw_item_c:\white\LANDING GEAR LEVER\grey\, UP|DONE:AirbusFBW/gearLever:0
-sw_item_c:\white\SPEEDBRAKES\grey\, DISARMED|SET:sim/cockpit2/controls/speedbrake_ratio:-0.3|0
+sw_item_c:\white\GND SPLR\grey\, DISARMED|SET:sim/cockpit2/controls/speedbrake_ratio:-0.3|0
 sw_item_c:\white\RWY TURNOFF & NOSE LIGHT\grey\, OFF|SET:(AirbusFBW/OHPLightSwitches[3]:0)&&(AirbusFBW/OHPLightSwitches[6]:0)
 sw_item_c:\white\AUTOPILOT\grey\, ENGANGE (ABOVE 1000FT AGL):(AirbusFBW/AP1Engage:1)||(AirbusFBW/AP2Engage:1)
 sw_itemvoid_c:\grey\......... FOR NOISE ABATEMENT DEPARTURES
